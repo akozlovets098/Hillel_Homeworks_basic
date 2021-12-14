@@ -10,3 +10,6 @@ def checklen(someset):
 
 test_list = [(1, 'sm'), (2, 'ft'), (0.3, 'fath'), (4, 'in'), (0.5, 'sm')]
 print(list(map(convert, filter(checklen, test_list))))
+
+# или (о таком узнала когда уже сдала домашку)):
+# print(list(map(convert, filter(lambda x: x[0] >= 1, test_list))))

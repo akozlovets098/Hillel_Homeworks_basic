@@ -12,8 +12,8 @@ def custom_request():
                          'put': r.put(adress, request_body),
                          'post': r.post(adress, request_body),
                          'delete': r.delete(adress)}
-    available_methods[method]
-    result = r.get(adress) # на экран вывожу что в итоге находится по указанному адресу
+    result = available_methods[method]
+    print(result.status_code)
     print(result.text)
 
 
